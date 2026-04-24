@@ -11,36 +11,7 @@ I developed a multi-physics simulation model, coupled with experimental validati
 
 **Background:** In the field of soft robotics, hydrogels are multi-stimuli-responsive, bio-compatible polymer networks that exhibit properties of both solids and liquids. Application-specific modelling and corresponding experimental validation for this material are currently limited.
 
----
 
-## Project Structure
-
-```
-soft-robotics-hydrogel/
-├── README.md
-└── images/
-    ├── background.png
-    │
-    │   — Experiment —
-    ├── out_gel.png
-    ├── mold_iter.png
-    ├── pre_gel.png
-    ├── post_gel.png
-    ├── swollen_gel.png
-    ├── bent_gel.png
-    ├── bending_results.png
-    ├── setup_side.png
-    ├── setup_top.png
-    ├── clamp.png
-    │
-    │   — Simulation —
-    ├── voltage_varing.png
-    ├── phiw_0_varing.png
-    ├── cstar_varing.png
-    ├── ionic_electric.png
-    ├── dis_press.png
-    └── difflen.png
-```
 
 ---
 
