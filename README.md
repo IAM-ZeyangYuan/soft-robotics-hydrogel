@@ -18,7 +18,7 @@ I developed a multi-physics simulation model, coupled with experimental validati
 ```
 soft-robotics-hydrogel/
 ├── README.md
-└── img/
+└── images/
     ├── background.png
     │
     │   — Experiment —
@@ -63,10 +63,10 @@ I iterated the composition and the molding system design for an optimal, repeata
 
 | Image | Description |
 |---|---|
-| ![Extracted hydrogel beams](img/out_gel.png) | **Extracted NaAc-AAm hydrogel beams** |
-| ![Mold design iterations](img/mold_iter.png) | **Iterations of the molding design** |
-| ![Before polymerisation](img/pre_gel.png) | **Molding system before polymerisation** |
-| ![After polymerisation](img/post_gel.png) | **Molding system after polymerisation** in a 45 °C environment |
+| ![Extracted hydrogel beams](images/out_gel.png) | **Extracted NaAc-AAm hydrogel beams** |
+| ![Mold design iterations](images/mold_iter.png) | **Iterations of the molding design** |
+| ![Before polymerisation](images/pre_gel.png) | **Molding system before polymerisation** |
+| ![After polymerisation](images/post_gel.png) | **Molding system after polymerisation** in a 45 °C environment |
 
 ---
 
@@ -74,7 +74,7 @@ I iterated the composition and the molding system design for an optimal, repeata
 
 I conducted swelling actuation tests on the fabricated hydrogel beams in a NaCl bath, with varying crosslinker ratio and salt concentration, as a way to validate the simulation.
 
-![Swelling actuation test](img/swollen_gel.png)
+![Swelling actuation test](images/swollen_gel.png)
 
 **Results — crosslinker ratio vs. swelling:**
 
@@ -98,11 +98,11 @@ I conducted bending actuation tests on the fabricated hydrogel beams in a NaCl b
 
 | Image | Description |
 |---|---|
-| ![Bending test overview](img/bent_gel.png) | **Bending actuation test** — hydrogel beam under electric field |
-| ![Bending results](img/bending_results.png) | **Bending actuation test results** — the response exhibits first-order–like dynamics, with an initially near-linear transient and an asymptotic approach to its magnitude limit; behaviour against varying parameters (electric field strength, crosslinker ratio) is used to validate the simulation |
-| ![Setup side view](img/setup_side.png) | **Test setup (side view)** — angled illumination source and dye were added to enhance visibility of the transparent hydrogel in the transparent environment |
-| ![Setup top view](img/setup_top.png) | **Test setup (top view)** — same illumination and dye configuration |
-| ![Clamp fixture](img/clamp.png) | **Fixture design** — custom clamp designed to securely hold the hydrogel beam despite its fragility and smooth surface |
+| ![Bending test overview](images/bent_gel.png) | **Bending actuation test** — hydrogel beam under electric field |
+| ![Bending results](images/bending_results.png) | **Bending actuation test results** — the response exhibits first-order–like dynamics, with an initially near-linear transient and an asymptotic approach to its magnitude limit; behaviour against varying parameters (electric field strength, crosslinker ratio) is used to validate the simulation |
+| ![Setup side view](images/setup_side.png) | **Test setup (side view)** — angled illumination source and dye were added to enhance visibility of the transparent hydrogel in the transparent environment |
+| ![Setup top view](images/setup_top.png) | **Test setup (top view)** — same illumination and dye configuration |
+| ![Clamp fixture](images/clamp.png) | **Fixture design** — custom clamp designed to securely hold the hydrogel beam despite its fragility and smooth surface |
 
 ---
 
@@ -114,20 +114,20 @@ I built a multi-physics simulation that predicts the actuation of electro-active
 
 | Image | Description |
 |---|---|
-| ![Actuation vs voltage](img/voltage_varing.png) | **Predicted actuation at different voltages** — predicted swelling is within the same order of magnitude as experimental values; swelling increases to a maximum of 8.7% in the presence of an electric field (not observed experimentally); predicted deflection trend matches experimental observations |
-| ![Actuation vs water percentage](img/phiw_0_varing.png) | **Predicted actuation at different reference water percentages (ψ₀ʷ)** — simulation and experiment show opposite behaviours when crosslinker ratio is assumed to be associated solely with ψ₀ʷ; further investigation will include the effect of the crosslinker on the Lamé coefficients |
-| ![Actuation vs salt concentration](img/cstar_varing.png) | **Predicted actuation at different salt bath concentrations** — predicted swelling follows the same trend as the experiment; however, achieving a linear swelling decrease requires a near-linear concentration increase in the model vs. an exponential increase in the experiment |
+| ![Actuation vs voltage](images/voltage_varing.png) | **Predicted actuation at different voltages** — predicted swelling is within the same order of magnitude as experimental values; swelling increases to a maximum of 8.7% in the presence of an electric field (not observed experimentally); predicted deflection trend matches experimental observations |
+| ![Actuation vs water percentage](images/phiw_0_varing.png) | **Predicted actuation at different reference water percentages (ψ₀ʷ)** — simulation and experiment show opposite behaviours when crosslinker ratio is assumed to be associated solely with ψ₀ʷ; further investigation will include the effect of the crosslinker on the Lamé coefficients |
+| ![Actuation vs salt concentration](images/cstar_varing.png) | **Predicted actuation at different salt bath concentrations** — predicted swelling follows the same trend as the experiment; however, achieving a linear swelling decrease requires a near-linear concentration increase in the model vs. an exponential increase in the experiment |
 
 ### Predicted Field Distributions
 
 | Image | Description |
 |---|---|
-| ![Ionic and electric distribution](img/ionic_electric.png) | **Predicted distribution of ionic species and electric potential** — shows the asymmetry in ionic distributions and the drop in electric potential created by the presence of the hydrogel (c_f = fixed ionic distribution on the hydrogel network); results agree with published work using different algorithm/formulation systems, further validating the simulation |
-| ![Displacement and pressure](img/dis_press.png) | **Predicted distribution of hydrogel displacement and fluid pressure** — displacement asymmetry about the fixed midpoint and the fluid pressure gradient are consistent with the actuation direction of the hydrogel |
+| ![Ionic and electric distribution](images/ionic_electric.png) | **Predicted distribution of ionic species and electric potential** — shows the asymmetry in ionic distributions and the drop in electric potential created by the presence of the hydrogel (c_f = fixed ionic distribution on the hydrogel network); results agree with published work using different algorithm/formulation systems, further validating the simulation |
+| ![Displacement and pressure](images/dis_press.png) | **Predicted distribution of hydrogel displacement and fluid pressure** — displacement asymmetry about the fixed midpoint and the fluid pressure gradient are consistent with the actuation direction of the hydrogel |
 
 ### Further Validation
 
-![Domain length validation](img/difflen.png)
+![Domain length validation](images/difflen.png)
 
 **Dependence of predicted swelling on domain length (expected invariance)** — I used a range of numerical domain lengths to investigate their influence on the predicted swollen width (at ψ₀ʷ = 0.6; NaCl = 10 mol/m³). A 20% change in domain length leads to only 1% variation in predicted swelling width, demonstrating simulation reliability in this regard.
 
