@@ -68,11 +68,13 @@ I conducted swelling actuation tests on the fabricated hydrogel beams in a NaCl 
         <tr><td>Swelling ratio (vs. reference)</td><td>3</td><td>2.55</td><td>2.05</td></tr>
       </table>
     </td>
-    <td>
-      <img src="images/swollen_gel.png" width="300"/>
-    </td>
   </tr>
 </table>
+
+<p align = "center">
+    <img src="images/swollen_gel.png" width="300"/>
+    <sub>Swelling actuation test of the hydrogel beams</sub>
+</p>
 
 ---
 
