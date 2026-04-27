@@ -34,12 +34,46 @@ I established a repeatable experimental system for fabricating NaAc-AAm hydrogel
 
 I iterated the composition and the molding system design for an optimal, repeatable fabrication protocol.
 
-| Image | Description |
-|---|---|
-| ![Extracted hydrogel beams](images/out_gel.png) | **Extracted NaAc-AAm hydrogel beams** |
-| ![Mold design iterations](images/mold_iter.png) | **Iterations of the molding design** |
-| ![Before polymerisation](images/pre_gel.png) | **Molding system before polymerisation** |
-| ![After polymerisation](images/post_gel.png) | **Molding system after polymerisation** in a 45 °C environment |
+
+
+
+
+
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src= "images/pre_gel.png" width="300"/><br/>
+      <sub>Molding system pre polymerisation</sub>
+    </td>
+    <td align="center">
+      <img src="images/post_gel.png" width="300"/><br/>
+      <sub>Molding system post polymerisation</sub>
+    </td>
+      <td align="center">
+    <img src= "images/out_gel.png" width="300"/><br/>
+    <sub>Extracted NaAc-AAm hydrogel beams</sub>
+    </td>
+  </tr>
+</table>
+
+
+
+<details>
+<summary><u><i>Click to view the iterations of the molding design</i></u></summary>
+
+<br>
+The design iterations resolved mold deformation, undesirable gel shape, and polymerisation inhibition caused by the mold material
+
+  <p align="center">
+    <img src= "images/mold_iter.png" width="300"/><br/>
+    <sub>Iterations of the molding design</sub>
+  </p>
+
+</details>
+
+
+
 
 ---
 
@@ -49,7 +83,7 @@ I conducted swelling actuation tests on the fabricated hydrogel beams in a NaCl 
 
 
 
-
+<!-- 
 <table align="left">
   <tr>
     <td>
@@ -69,12 +103,40 @@ I conducted swelling actuation tests on the fabricated hydrogel beams in a NaCl 
       </table>
     </td>
   </tr>
-</table>
+</table> -->
+
+
+
+
+<!-- **Results — crosslinker ratio vs. swelling:**
+
+| Crosslinker ratio              | 1:200 | 1:2000 |
+|--------------------------------|-------|--------|
+| Swollen width (mm)             | 3.00  | 5.00   |
+| Swelling ratio (vs. reference) | 3     | 5      |
+
+
+**Results — NaCl concentration vs. swelling:**
+
+| NaCl concentration             | 0.01 M | 0.1 M | 1 M  |
+|--------------------------------|--------|-------|------|
+| Swollen width (mm)             | 3.00   | 2.55  | 2.05 |
+| Swelling ratio (vs. reference) | 3      | 2.55  | 2.05 | -->
+
+
+
+**Results — different conditions vs. swelling:**
+| Crosslinker ratio  or NaCl concentration| 1:200 | 1:2000 | 0.01 M | 0.1 M | 1 M  |
+|----------------------------------|-------|--------|--------|-------|------|
+| Swollen width (mm)               | 3.00  | 5.00   | 3.00   | 2.55  | 2.05 |
+| Swelling ratio (vs. reference)   | 3     | 5      | 3      | 2.55  | 2.05 |
+
 
 <p align = "center">
-    <img src="images/swollen_gel.png" width="300"/>
+    <img src="images/swollen_gel.png" width="300"/><br/>
     <sub>Swelling actuation test of the hydrogel beams</sub>
 </p>
+
 
 ---
 
@@ -82,7 +144,7 @@ I conducted swelling actuation tests on the fabricated hydrogel beams in a NaCl 
 
 - I conducted bending actuation tests on the fabricated hydrogel beams in a NaCl bath, under an electric field, with varying crosslinker ratio and electric field strength, as a way to validate the simulation.
 <details>
-<summary>Click to view the bending test setup</summary>
+<summary><u><i>Click to view the bending test setup</i></u></summary>
 
   <table align="center">
     <tr>
