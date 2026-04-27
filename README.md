@@ -1,15 +1,17 @@
-# Multi-Stimuli-Responsive Smart Materials for Soft Robotics
+# Modelling and Experimentation of NaAc/AAm Hydrogel Beams as Soft Robotics Actuators
 
-**Duration:** October 2024 – September 2025  
-**Tags:** `Hardware / Experiment` · `Python` · `Simulation` · `Robotic Actuation`
+**Duration:** 10/2024 – 09/2025  
+**Tags:** `Hardware / Experiment` · `Simulation` · `Robotic Actuation` · `Python` 
 
 ---
 
 ## Overview
 
-I developed a multi-physics simulation model, coupled with experimental validation, for the **electrically induced actuation of NaAc/AAm hydrogel beams** immersed in a NaCl solution.
+**Background:** Hydrogels are multi-stimuli-responsive actuators in the field of soft robotics. However, application-specific modelling and corresponding experimental validation for this material are currently limited.
 
-**Background:** In the field of soft robotics, hydrogels are multi-stimuli-responsive, bio-compatible polymer networks that exhibit properties of both solids and liquids. Application-specific modelling and corresponding experimental validation for this material are currently limited.
+In this project, I developed a multi-physics simulation model, coupled with experimental validation, for the **electrically induced actuation of NaAc/AAm hydrogel beams** immersed in a NaCl solution.
+
+
 
 
 
@@ -45,37 +47,99 @@ I iterated the composition and the molding system design for an optimal, repeata
 
 I conducted swelling actuation tests on the fabricated hydrogel beams in a NaCl bath, with varying crosslinker ratio and salt concentration, as a way to validate the simulation.
 
-![Swelling actuation test](images/swollen_gel.png)
 
-**Results — crosslinker ratio vs. swelling:**
 
-| Crosslinker ratio              | 1:200 | 1:2000 |
-|--------------------------------|-------|--------|
-| Swollen width (mm)             | 3.00  | 5.00   |
-| Swelling ratio (vs. reference) | 3     | 5      |
 
-**Results — NaCl concentration vs. swelling:**
-
-| NaCl concentration             | 0.01 M | 0.1 M | 1 M  |
-|--------------------------------|--------|-------|------|
-| Swollen width (mm)             | 3.00   | 2.55  | 2.05 |
-| Swelling ratio (vs. reference) | 3      | 2.55  | 2.05 |
+<table align="left">
+  <tr>
+    <td>
+      <b>Crosslinker ratio vs. swelling</b>
+      <table>
+        <tr><th>Crosslinker ratio</th><th>1:200</th><th>1:2000</th></tr>
+        <tr><td>Swollen width (mm)</td><td>3.00</td><td>5.00</td></tr>
+        <tr><td>Swelling ratio (vs. reference)</td><td>3</td><td>5</td></tr>
+      </table>
+    </td>
+    <td>
+      <b>NaCl concentration vs. swelling</b>
+      <table>
+        <tr><th>NaCl concentration</th><th>0.01 M</th><th>0.1 M</th><th>1 M</th></tr>
+        <tr><td>Swollen width (mm)</td><td>3.00</td><td>2.55</td><td>2.05</td></tr>
+        <tr><td>Swelling ratio (vs. reference)</td><td>3</td><td>2.55</td><td>2.05</td></tr>
+      </table>
+    </td>
+    <td>
+      <img src="images/swollen_gel.png" width="300"/>
+    </td>
+  </tr>
+</table>
 
 ---
 
 ### Bending Actuation Test
 
-I conducted bending actuation tests on the fabricated hydrogel beams in a NaCl bath, under an electric field, with varying crosslinker ratio and electric field strength, as a way to validate the simulation.
+- I conducted bending actuation tests on the fabricated hydrogel beams in a NaCl bath, under an electric field, with varying crosslinker ratio and electric field strength, as a way to validate the simulation.
+<details>
+<summary>Click to view the bending test setup</summary>
 
-| Image | Description |
-|---|---|
-| ![Bending test overview](images/bent_gel.png) | **Bending actuation test** — hydrogel beam under electric field |
-| ![Bending results](images/bending_results.png) | **Bending actuation test results** — the response exhibits first-order–like dynamics, with an initially near-linear transient and an asymptotic approach to its magnitude limit; behaviour against varying parameters (electric field strength, crosslinker ratio) is used to validate the simulation |
-| ![Setup side view](images/setup_side.png) | **Test setup (side view)** — angled illumination source and dye were added to enhance visibility of the transparent hydrogel in the transparent environment |
-| ![Setup top view](images/setup_top.png) | **Test setup (top view)** — same illumination and dye configuration |
-| ![Clamp fixture](images/clamp.png) | **Fixture design** — custom clamp designed to securely hold the hydrogel beam despite its fragility and smooth surface |
+  <table align="center">
+    <tr>
+      <td align="center">
+        <img src= "images/setup_side.png" width="300"/><br/>
+        <sub>Bending test setup (side view)</sub>
+      </td>
+      <td align="center">
+        <img src="images/setup_top.png" width="300"/><br/>
+        <sub>Bending test setup (top view)</sub>
+      </td>
+      <td align="center">
+        <img src="images/clamp.png" width="300"/><br/>
+        <sub>Fixture design</sub>
+      </td>
+    </tr>
+  </table>
+
+</details>
+<br>
+
+
+
+- The bending response exhibits first-order–like dynamics, with an initially near-linear transient and an asymptotic approach to its magnitude limit; behaviour against varying parameters (electric field strength, crosslinker ratio) is used to validate the simulation
+
+<table align="center">
+    <tr>
+      <td align="center">
+        <img src= "images/bent_gel.png" width="300"/><br/>
+        <sub>Bending test setup (side view)</sub>
+      </td>
+      <td align="center">
+        <img src="images/bending_results.png" width="300"/><br/>
+        <sub>Bending test setup (top view)</sub>
+      </td>
+    </tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
+
 
 ## Simulation (Python / MATLAB)
 
