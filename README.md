@@ -173,76 +173,75 @@ I conducted bending actuation tests on the fabricated hydrogel beams in a NaCl b
 ---
 
 
-## Simulation (Python / MATLAB)
+## Simulation (Python + MATLAB)
 
 I built a multi-physics simulation that predicts the actuation of electro-active hydrogel beams in a salt bath under an electric field. The prediction is validated through experiments and self-consistency checks.
 
 ### Predicted Actuation
 
-<table align="center" style="width: 90%; table-layout: fixed;">
+<details>
+  <summary><i>Against different voltages</i></summary>
+  <div style="text-align: left;">
+    <ul>
+      <li>
+        The predicted swelling is within the same order of magnitude as the experimental values.
+      </li>
+      <li>
+        The predicted swelling increases to a maximum of 8.7% in the presence of an electric field, which was not observed in the experiments.
+      </li>
+      <li>
+        The predicted deflection exhibits the same trend as that observed in the experiments.
+      </li>
+    </ul>
+  </div>
+</details>
 
-  <colgroup>
-    <col style="width: 33%">
-    <col style="width: 33%">
-    <col style="width: 33%">
-  </colgroup>
+<details>
+  <summary><i>Against different reference water percentages ψ₀ʷ</i></summary>
+  <div style="text-align: left;">
+    <ul>
+      <li>
+        The simulation and the experiment exhibited opposite behaviours when the crosslinker ratio was assumed to be associated solely with ψ₀ʷ.
+      </li>
+      <li>
+        Further investigation will include the effect of the crosslinker on the Lamé coefficients.
+      </li>
+    </ul>
+  </div>
+</details>
+
+<details>
+  <summary><i>Against different salt bath concentrations c*</i></summary>
+  <div style="text-align: left;">
+    <ul>
+      <li>
+        The predicted swelling follows the same trend as the experimental result; however, to achieve a linear swelling decrease, the model requires a near-linear increase in salt concentration, whereas the experiment requires an exponential increase.
+      </li>
+      <li>
+        Further investigation will increase the sample size and the parameter range, to realize a more confident analysis.
+      </li>
+    </ul>
+  </div>
+</details>
+
+<table align="center" style="table-layout: fixed;">
+
+
   <tr>
     <td align="center" valign="top">
       <img src="images/voltage_varing.png" style="width:300px; object-fit:contain;">
       <br>
       <sub>Predicted actuation at different voltages</sub>
-      <details>
-        <summary><i>Details</i></summary>
-        <div style="text-align: left;">
-          <ul>
-            <li>
-              The predicted swelling is within the same order of magnitude as the experimental values.
-            </li>
-            <li>
-              The predicted swelling increases to a maximum of 8.7% in the presence of an electric field, which was not observed in the experiments.
-            </li>
-            <li>
-              The predicted deflection exhibits the same trend as that observed in the experiments.
-            </li>
-          </ul>
-        </div>
-      </details>
     </td>
     <td align="center" valign="top">
       <img src="images/phiw_0_varing.png" style="width:300px; object-fit:contain;">
       <br>
-      <sub>Predicted actuation at different reference water percentages (ψ₀ʷ)</sub>
-      <details>
-        <summary><i>Details</i></summary>
-        <div style="text-align: left;">
-          <ul>
-            <li>
-              The simulation and the experiment exhibited opposite behaviours when the crosslinker ratio was assumed to be associated solely with ψ₀ʷ.
-            </li>
-            <li>
-              Further investigation will include the effect of the crosslinker on the Lamé coefficients.
-            </li>
-          </ul>
-        </div>
-      </details>
+      <sub>Predicted actuation at different ψ₀ʷ</sub>
     </td>
     <td align="center" valign="top">
       <img src="images/cstar_varing.png" style="width:300px; object-fit:contain;">
       <br>
-      <sub>Predicted actuation at different salt bath concentrations</sub>
-      <details>
-        <summary><i>Details</i></summary>
-        <div style="text-align: left;">
-          <ul>
-            <li>
-              The predicted swelling follows the same trend as the experimental result; however, to achieve a linear swelling decrease, the model requires a near-linear increase in salt concentration, whereas the experiment requires an exponential increase.
-            </li>
-            <li>
-              Further investigation will increase the sample size and the parameter range, to realize a more confident analysis.
-            </li>
-          </ul>
-        </div>
-      </details>
+      <sub>Predicted actuation at different c*</sub>
     </td>
   </tr>
 </table>
@@ -255,49 +254,52 @@ I built a multi-physics simulation that predicts the actuation of electro-active
 
 
 
+<details>
+  <summary><i>Ionic species and electric potential</i></summary>
+  <div style="text-align: left;">
+    <ul>
+      <li>
+        The plot showcases the asymmetry in the ionic distributions and the ‘drop’ in electric potential distribution created by the presence of the hydrogel. (cf represents the fixed ionic distribution on the hydrogel network)
+      </li>
+      <li>
+        The plot is in agreement with results in other researches using different algorithm/formulation systems, further validating the simulation.
+      </li>
+    </ul>
+  </div>
+</details>
 
-<table align="center" style="width: 60%; table-layout: fixed;">
 
-  <colgroup>
-    <col style="width: 50%">
-    <col style="width: 50%">
-  </colgroup>
+<details>
+  <summary><i>Hydrogel displacement and fluid pressure</i></summary>
+  <div style="text-align: left;">
+    <ul>
+      <li>
+        The displacement asymmetry about the fixed mid point and the fluid pressure gradient is consistent with the actuation direction of the hydrogel.
+      </li>
+    </ul>
+  </div>
+</details>
+
+<table align="center">
+
   <tr>
-    <td align="center" valign="top">
-      <img src="images/ionic_electric.png" style="width:300px; object-fit:contain;">
+    <td align="center">
+      <img src="images/ionic_electric.png" width="300"/>
       <br>
       <sub>Predicted distribution of ionic species and electric potential</sub>
-      <details>
-        <summary><i>Details</i></summary>
-        <div style="text-align: left;">
-          <ul>
-            <li>
-              The plot showcases the asymmetry in the ionic distributions and the ‘drop’ in electric potential distribution created by the presence of the hydrogel. (cf represents the fixed ionic distribution on the hydrogel network)
-            </li>
-            <li>
-              The plot is in agreement with results in other researches using different algorithm/formulation systems, further validating the simulation.
-            </li>
-          </ul>
-        </div>
-      </details>
     </td>
-    <td align="center" valign="top">
-      <img src="images/dis_press.png" style="width:300px; object-fit:contain;">
+    <td align="center">
+      <img src="images/dis_press.png" width="300">
       <br>
-      <sub>Predicted distribution of hydrogel displacement and fluid pressure</sub>
-      <details>
-        <summary><i>Details</i></summary>
-        <div style="text-align: left;">
-          <ul>
-            <li>
-              The displacement asymmetry about the fixed mid point and the fluid pressure gradient is consistent with the actuation direction of the hydrogel.
-            </li>
-          </ul>
-        </div>
-      </details>
+      <sub>Predicted distribution of gel displacement and fluid pressure</sub>
     </td>
   </tr>
 </table>
+
+
+
+
+
 
 ### Further Validation
 
