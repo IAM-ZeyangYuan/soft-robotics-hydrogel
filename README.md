@@ -179,7 +179,7 @@ I built a multi-physics simulation that predicts the actuation of electro-active
 
 ### Predicted Actuation
 
-<table align="center" style="width: 90%;">
+<table align="center" style="width: 90%; table-layout: fixed;">
 
   <colgroup>
     <col style="width: 33%">
@@ -187,8 +187,9 @@ I built a multi-physics simulation that predicts the actuation of electro-active
     <col style="width: 33%">
   </colgroup>
   <tr>
-    <td align="center">
-      <img src="images/voltage_varing.png" width="300"><br>
+    <td align="center" valign="top">
+      <img src="images/voltage_varing.png" style="width:300px; object-fit:contain;">
+      <br>
       <sub>Predicted actuation at different voltages</sub>
       <details>
         <summary><i>Details</i></summary>
@@ -207,8 +208,9 @@ I built a multi-physics simulation that predicts the actuation of electro-active
         </div>
       </details>
     </td>
-    <td align="center">
-      <img src="images/phiw_0_varing.png" width="300"><br>
+    <td align="center" valign="top">
+      <img src="images/phiw_0_varing.png" style="width:300px; object-fit:contain;">
+      <br>
       <sub>Predicted actuation at different reference water percentages (ψ₀ʷ)</sub>
       <details>
         <summary><i>Details</i></summary>
@@ -224,8 +226,9 @@ I built a multi-physics simulation that predicts the actuation of electro-active
         </div>
       </details>
     </td>
-    <td align="center">
-      <img src="images/cstar_varing.png" width="300"><br>
+    <td align="center" valign="top">
+      <img src="images/cstar_varing.png" style="width:300px; object-fit:contain;">
+      <br>
       <sub>Predicted actuation at different salt bath concentrations</sub>
       <details>
         <summary><i>Details</i></summary>
@@ -253,15 +256,16 @@ I built a multi-physics simulation that predicts the actuation of electro-active
 
 
 
-<table align="center" style="width: 60%;">
+<table align="center" style="width: 60%; table-layout: fixed;">
 
   <colgroup>
     <col style="width: 50%">
     <col style="width: 50%">
   </colgroup>
   <tr>
-    <td align="center">
-      <img src="images/ionic_electric.png" width="300"><br>
+    <td align="center" valign="top">
+      <img src="images/ionic_electric.png" style="width:300px; object-fit:contain;">
+      <br>
       <sub>Predicted distribution of ionic species and electric potential</sub>
       <details>
         <summary><i>Details</i></summary>
@@ -277,8 +281,9 @@ I built a multi-physics simulation that predicts the actuation of electro-active
         </div>
       </details>
     </td>
-    <td align="center">
-      <img src="images/dis_press.png" width="300"><br>
+    <td align="center" valign="top">
+      <img src="images/dis_press.png" style="width:300px; object-fit:contain;">
+      <br>
       <sub>Predicted distribution of hydrogel displacement and fluid pressure</sub>
       <details>
         <summary><i>Details</i></summary>
